@@ -44,9 +44,9 @@ class Items extends Component {
               ultrices gravida.
             </p>
             <div className="items-content">
-              {this.state.items.map((value) => {
+              {this.state.items.map((value,index) => {
                 return (
-                  <div key={value?.id} className="item">
+                  <div key={index} className="item">
                     <div className="img-box">
                       <img src={value.img} alt="" />
                       <i className="far fa-heart like"></i>

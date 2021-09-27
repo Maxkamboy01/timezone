@@ -62,9 +62,9 @@ function RigthBlog() {
       <div className="recent-box">
         <p className="title">Recent Post</p>
         <ul>
-          {state.map((value) => {
+          {state.map((value,index) => {
             return (
-              <li key={value?.id}>
+              <li key={index}>
                 <img src={value.img} alt="" />
                 <div className="texts">
                   <span className="title">{value.title}</span>

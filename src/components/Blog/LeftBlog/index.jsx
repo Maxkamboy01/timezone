@@ -26,9 +26,9 @@ function LeftBlog() {
   ]);
   return (
     <LEftstyle>
-      {state.map((value) => {
+      {state.map((value,index) => {
         return (
-          <div key={value?.id} className="content">
+          <div key={index} className="content">
             <img src={value.img} alt="" />
             <div className="data">
               15 <br /> Jan
