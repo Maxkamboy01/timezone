@@ -104,7 +104,7 @@ function Leftblogdetails() {
         <div className="comments">
           {comment.map((value) => {
             return (
-              <div className="comment">
+              <div key={value?.id} className="comment">
                 <img src={value.img} alt="" />
                 <div className="others">
                   <p className="text">

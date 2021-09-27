@@ -55,9 +55,9 @@ class Navbar extends React.Component {
           </li>
         </ul>
         <ul className="avatar">
-          <i class="fas fa-search"></i>
-          <i class="fas fa-user"></i>
-          <i class="fas fa-shopping-cart"></i>
+          <i className="fas fa-search"></i>
+          <i className="fas fa-user"></i>
+          <i className="fas fa-shopping-cart"></i>
         </ul>
       </nav>
     );

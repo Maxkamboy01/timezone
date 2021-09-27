@@ -46,7 +46,7 @@ class Items extends Component {
             <div className="items-content">
               {this.state.items.map((value) => {
                 return (
-                  <div className="item">
+                  <div key={value?.id} className="item">
                     <div className="img-box">
                       <img src={value.img} alt="" />
                       <i className="far fa-heart like"></i>

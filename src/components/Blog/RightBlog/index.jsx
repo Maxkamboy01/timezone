@@ -17,21 +17,25 @@ function RigthBlog() {
       img: Recentli_1,
       title: "From life was you fish...",
       date: "January 12, 2019",
+      id: 0,
     },
     {
       img: Recentli_2,
       title: "The Amazing Hubble",
       date: "02 Hours ago",
+      id: 1,
     },
     {
       img: Recentli_3,
       title: "Astronomy Or Astrology",
       date: "03 Hours ago",
+      id: 2,
     },
     {
       img: Recentli_4,
       title: "Asteroids telescope",
       date: "01 Hours ago",
+      id: 3,
     },
   ]);
   return (
@@ -60,7 +64,7 @@ function RigthBlog() {
         <ul>
           {state.map((value) => {
             return (
-              <li>
+              <li key={value?.id}>
                 <img src={value.img} alt="" />
                 <div className="texts">
                   <span className="title">{value.title}</span>
