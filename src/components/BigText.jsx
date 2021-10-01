@@ -7,6 +7,7 @@ class BigText extends Component {
   }
   render() {
     return <div className="bigheader">{this.props.children}</div>;
+    
   }
 }
 

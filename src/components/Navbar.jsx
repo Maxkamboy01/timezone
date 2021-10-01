@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./assets/img/logo/logo2_footer.png";
+import {Navbarstyle} from "./Navbarstyle"
 
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <nav>
+
+
+
+function Navbar({navbarposition}) {
+  return (
+      <Navbarstyle navbarposition={navbarposition}>
         <div className="logo">
           <img src={Logo} alt="" />
         </div>
@@ -59,9 +58,8 @@ class Navbar extends React.Component {
           <i className="fas fa-user"></i>
           <i className="fas fa-shopping-cart"></i>
         </ul>
-      </nav>
-    );
-  }
+      </Navbarstyle>
+  )
 }
 
-export default Navbar;
+export default Navbar
